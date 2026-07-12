@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #ff7a00;
+  --color-brand-dark: #1c1109;
+  --color-brand-cream: #fffaf0;
+  --color-brand-yellow: #ffd000;
+}
+
+@theme inline {
+  --font-heading: var(--font-lilita);
+  --font-sans: var(--font-dm);
+  --font-script: var(--font-pacifico);
+}
+
+body {
+  background: #fffaf0;
+  color: #1c1109;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
