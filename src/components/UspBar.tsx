@@ -1,7 +1,7 @@
 export default function UspBar() {
   return (
-    <div className="w-full border-y-2 border-brand-dark bg-brand-cream">
-      <div className="max-w-7xl mx-auto">
+    <div className="w-full bg-brand-cream px-6 md:px-12">
+      <div className="max-w-7xl mx-auto border-y-2 border-brand-dark">
         <div className="grid grid-cols-1 md:grid-cols-3 divide-y-2 md:divide-y-0 md:divide-x-2 divide-brand-dark">
 
           {/* Col 1: Title */}

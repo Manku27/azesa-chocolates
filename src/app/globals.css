@@ -25,3 +25,30 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+.tilt {
+  transform: rotate(var(--base-rot, 0deg));
+}
+
+.jitter {
+  animation: jitter 1.6s ease-in-out infinite;
+}
+
+@keyframes jitter {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(var(--base-rot, 0deg));
+  }
+  20% {
+    transform: translate(-0.75px, 0.5px) rotate(calc(var(--base-rot, 0deg) - 1deg));
+  }
+  40% {
+    transform: translate(0.75px, -0.5px) rotate(calc(var(--base-rot, 0deg) + 1deg));
+  }
+  60% {
+    transform: translate(-0.5px, -0.75px) rotate(calc(var(--base-rot, 0deg) - 0.75deg));
+  }
+  80% {
+    transform: translate(0.5px, 0.75px) rotate(calc(var(--base-rot, 0deg) + 0.75deg));
+  }
+}

@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import UspBar from "@/components/UspBar";
 import BestsellerCarousel from "@/components/BestsellerCarousel";
 import FeaturedSpotlight from "@/components/FeaturedSpotlight";
+import CategoriesSection from "@/components/CategoriesSection";
 import BrandStoryTeaser from "@/components/BrandStoryTeaser";
 import OccasionsSection from "@/components/OccasionsSection";
 import B2bTeaser from "@/components/B2bTeaser";
@@ -21,13 +22,14 @@ export default function Home() {
         </div>
       </div>
       <main>
-        <UspBar />
         <BestsellerCarousel />
+        <UspBar />
         <FeaturedSpotlight />
+        <CategoriesSection />
         <BrandStoryTeaser />
         <OccasionsSection />
-        <B2bTeaser />
         <ReviewsSection />
+        <B2bTeaser />
       </main>
       <Footer />
     </>

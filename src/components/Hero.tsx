@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       className="relative overflow-hidden rounded-2xl"
-      style={{ backgroundColor: "#ff7a00", minHeight: 520 }}
+      style={{ backgroundColor: "#ff7a00", minHeight: 500, maxHeight: "calc(100vh - 110px)" }}
     >
       {/* Yellow right-side diagonal panel */}
       <div
@@ -23,14 +23,14 @@ export default function Hero() {
 
       {/* Content */}
       <div
-        className="relative z-10 max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
-        style={{ minHeight: 520 }}
+        className="relative z-10 max-w-7xl mx-auto px-6 py-10 md:py-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center"
+        style={{ minHeight: 500 }}
       >
         {/* Left: Headline + CTA */}
         <div>
           <h1
-            className="font-heading text-white leading-[0.92] mb-8"
-            style={{ fontSize: "clamp(56px, 7.5vw, 104px)" }}
+            className="font-heading text-white leading-[0.92] mb-6"
+            style={{ fontSize: "clamp(44px, 6vw, 84px)" }}
           >
             Crafted in India.
             <br />
@@ -38,25 +38,23 @@ export default function Hero() {
           </h1>
 
           {/* CTA + description side-by-side (Marco pattern) */}
-          <div className="flex flex-wrap items-start gap-5 mb-5">
+          <div className="flex flex-wrap items-start gap-5">
             <Button href="/shop">Shop Now</Button>
             <p className="text-white/85 text-sm leading-relaxed max-w-[200px] pt-1">
               No palm oil. No artificial colours. Just real Indian chocolate.
             </p>
           </div>
-
-          <Button href="/for-business">For Businesses</Button>
         </div>
 
         {/* Right: Product placeholder */}
-        <div className="relative flex items-center justify-center py-8">
+        <div className="relative flex items-center justify-center py-4">
           <div
             className="rounded-2xl flex flex-col items-center justify-center shadow-2xl relative"
-            style={{ width: 260, height: 260, backgroundColor: "#1c1109" }}
+            style={{ width: 240, height: 240, backgroundColor: "#1c1109" }}
           >
             <span
               className="font-heading text-brand-yellow leading-none mb-2"
-              style={{ fontSize: 44 }}
+              style={{ fontSize: 42 }}
             >
               Azesa
             </span>
@@ -65,7 +63,7 @@ export default function Hero() {
             </span>
 
             <div
-              className="absolute -bottom-5 -right-5 w-[72px] h-[72px] rounded-full flex flex-col items-center justify-center text-center"
+              className="absolute -bottom-6 -right-6 w-[76px] h-[76px] rounded-full flex flex-col items-center justify-center text-center"
               style={{ backgroundColor: "#ff7a00", border: "3px solid #ffd000" }}
             >
               <span className="font-heading text-white text-[10px] leading-tight">Made in</span>

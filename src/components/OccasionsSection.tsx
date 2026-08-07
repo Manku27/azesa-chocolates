@@ -9,7 +9,7 @@ const occasions = [
 
 export default function OccasionsSection() {
   return (
-    <section className="py-14 bg-white">
+    <section className="py-14 bg-brand-cream">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between mb-10">
           <h2 className="font-heading text-brand-dark" style={{ fontSize: "clamp(26px, 3.5vw, 44px)" }}>
